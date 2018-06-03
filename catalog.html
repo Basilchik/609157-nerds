@@ -5,102 +5,116 @@
 	<title>HTML Academy: Нёрдс</title>
 </head>
 <body>
-	<header>
-		<nav class="main-nav">
-			<h1><a href="index.html"><img src="img/#"  width="160" height="65" alt="Nerds logo"></a></h1>
-			<ul>
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul>
-				<li><a href="#">Корзина</a></li>
-			</ul>
-		</nav>
-		
-	</header>
-	<main>
-		<h2>Магазин готовых шаблонов</h2>
-			<section class="filters-block">
-				<h3 class="visually-hidden">Выбор шаблона по фильтру</h3>
-				<div class="filter-price">
-					<h4 class="visually-hidden">Фильтр по цене</h4>
-
-					<!-- тут будет слайдер цен -->
-
-				</div>
-				<div class="filter-layout">
-					<h4 class="visually-hidden">Фильтр по сетке</h4>
-					<ul>
-						<li>Адаптивная</li>
-						<li>Фиксированная</li>
-						<li>Резиновая</li>
+	<div class="wrapper">
+		<header class="main-header">
+				<nav class="main-nav">
+					<a href="index.html" class="main-header-logo"><img src="img/#"  width="160" height="65" alt="Nerds logo"></a>
+					<ul class="site-navigation">
+						<li><a href="#">Студия</a></li>
+						<li><a href="#">Клиенты</a></li>
+						<li class="active"><a href="#">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
-				</div>
-				<div class="filter-features">
-					<h4 class="visually-hidden">Фильтр по особенностям</h4>
 					<ul>
-						<li>Слайдер</li>
-						<li>Блок преимуществ</li>
-						<li>Новости</li>
-						<li>Галерея</li>
-						<li>Корзина</li>
+						<li class="user-navigation"><a href="#">Корзина</a></li>
 					</ul>
+				</nav>
+			</header>
+		<main>
+			<h2>Магазин готовых шаблонов</h2>
+				<section class="filters-block">
+					<h3 class="visually-hidden">Выбор шаблона по фильтру</h3>
+					<div class="filter-by-price">
+						<h4 class="visually-hidden">Фильтр по цене</h4>
 
-				</div>
-				<a href="#" class="button">Показать</a>
-			</section>
-			<section class="catalog-portfolio">
-				<h3 class="visually-hidden">Примеры наших работ</h3>
-				<div class="portfolio-sorting">
-					<p>Сортировать:</p>
+						<!-- тут будет слайдер цен -->
+
+					</div>
+					<div class="filter-by-layout">
+						<h4 class="visually-hidden">Фильтр по сетке</h4>
+						<ul>
+							<li>Адаптивная</li>
+							<li>Фиксированная</li>
+							<li>Резиновая</li>
+						</ul>
+					</div>
+					<div class="filter-features">
+						<h4 class="visually-hidden">Фильтр по особенностям</h4>
+						<ul>
+							<li>Слайдер</li>
+							<li>Блок преимуществ</li>
+							<li>Новости</li>
+							<li>Галерея</li>
+							<li>Корзина</li>
+						</ul>
+
+					</div>
+					<a href="#" class="button">Показать</a>
+				</section>
+				<section class="catalog-portfolio">
+					<h3 class="visually-hidden">Примеры наших работ</h3>
+					<div class="portfolio-sorting">
+						<p>Сортировать:</p>
+						<ul>
+							<li class="sort-by-price">По цене</li>
+							<li class="sort-by-type">По типу</li>
+							<li class="sort-by-name">По названию</li>
+						</ul>
+					</div>
 					<ul>
-						<li class="sort-by-price">По цене</li>
-						<li class="sort-by-type">По типу</li>
-						<li class="sort-by-name">По названию</li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
 					</ul>
-				</div>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-				<ul class="pagination">
-					<li>1</li>
-					<li>2</li>
-					<li>3</li>
-					<li>Следующая</li>
-				</ul>
-				
-			</section>
-				
-	</main>
-	<footer>
+					<ul class="pagination">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>Следующая</li>
+					</ul>
+					
+				</section>
+					
+		</main>
+		<footer class="main-footer">
 			<section class="contacts">
-				<h2>Nerds Design Studio</h2>
-				<address>
-					191186, Санкт-Петербург,<br>
-					ул. Б.Конюшенная, д. 19/8<br>
+				<h2 class="contacts-name">Nerds Design Studio</h2>
+				<address class="contacts-address">
+					191186, Санкт-Петербург,
+					ул. Б.Конюшенная, д. 19/8
 					тел. +7 (812) 275-75-75
 				</address>
 				<a href="#" class="button">Напишите нам</a>
-
-				<!-- тут будет модальное окно -->
-				
 			</section>
+			<section class="modal-form">
+				<div class="modal-form-wrapper">
+					<form class="feedback-form">
+						<label for="your-name">Ваше имя:</label>
+						<input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+						<label for="your-email">Ваш e-mail:</label>
+						<input type="email" name="email" id="your-email" placeholder="email@example.com">
+						<label for="your-text">Текст письма</label>
+						<textarea id="your-text" placeholder="В свободной форме"></textarea>
+						<input type="submit" value="Отправить">
+					</form>
+				</div>	
+			</section>
+		
 			<section class="social-links">
-				<h2 class="visually-hidden">Промо</h2>
-				<a href="#" class="social-button">Vkontakte</a>
-				<a href="#" class="social-button">Facebook</a>
-				<a href="#" class="social-button">Tweeter</a>
-
-				<p class="lead-text"><b>Давайте дружить, это выгодно!</b></p>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
+				<ul class="social-links-list">
+					<li><a href="#" class="social-button">Vkontakte</a></li>
+					<li><a href="#" class="social-button">Facebook</a></li>
+					<li><a href="#" class="social-button">Tweeter</a></li>
+				</ul>
+				<div class="social-links-info">
+					<p class="lead-text"><b>Давайте дружить, это выгодно!</b></p>
+					<p class="description">Скидка 10% для друзей из социальных сетей.</p>
+				</div>
 			</section>
 		</footer>
+	</div>		
 </body>
 </html>
