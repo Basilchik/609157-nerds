@@ -24,33 +24,74 @@
 			<h2 class="templates-shop-title">Магазин готовых шаблонов</h2>
 			<div class="main-content">
 				<section class="filters-block">
-					<form>	
-						<!-- <h3 class="visually-hidden">Выбор шаблона по фильтру</h3>
-						<div class="filter-by-price">
-							<h4 class="visually-hidden">Фильтр по цене</h4>
-						</div>
-						<div class="filter-by-layout">
-							<h4 class="visually-hidden">Фильтр по сетке</h4>
-							<ul class="layouts-list">
-								<li>Адаптивная</li>
-								<li>Фиксированная</li>
-								<li>Резиновая</li>
+					<form class="filter" method="get" action="https://echo.htmlacademy.ru">	
+						<fieldset>
+							<legend>Стоимость:</legend>
+							 <label class="price-value-label">Rangeslider:</label>
+        						<input type="range" name="range-1a" min="0" max="100" value="40" data-popup-enabled="true" data-show-value="true">        
+        					<label class="price-value-label">
+        						<input type="range" name="range-1b"  min="0" max="100" value="80" data-popup-enabled="true" data-show-value="true">
+        						Rangeslider:</label>
+						</fieldset>
+						<fieldset>
+							<legend>Сетка:</legend>
+							<ul>
+								<li>
+									<label class="layout-name-label">
+										<input type="radio" name="layouts" value="adaptive">
+										<span class="layout-name">Адаптивная</span>
+									</label>	
+								</li>
+								<li>
+									<label class="layout-name-label">
+										<input type="radio" name="layouts" value="static">
+										<span class="layout-name">Фиксированная</span>
+									</label>	
+								</li>
+								<li>
+									<label class="layout-name-label">
+										<input type="radio" name="layouts" value="fluid">
+										<span class="layout-name">Резиновая</span>
+									</label>	
+								</li>
 							</ul>
-						</div>
-						<div class="filter-features">
-							<h4 class="visually-hidden">Фильтр по особенностям</h4>
-							<ul class="features-list">
-								<li>Слайдер</li>
-								<li>Блок преимуществ</li>
-								<li>Новости</li>
-								<li>Галерея</li>
-								<li>Корзина</li>
+						</fieldset>
+						<fieldset>
+							<legend>Особенности:</legend>
+							<ul>
+								<li>
+									<label class="checkbox-name-label">
+										<input type="checkbox" name="slider" checked>
+										<span class="checkbox-name">Слайдер</span>
+									</label>	
+								</li>
+								<li>
+									<label class="checkbox-name-label">
+										<input type="checkbox" name="block-of-advantages">
+										<span class="checkbox-name">Блок преимуществ</span>
+									</label>	
+								</li>
+								<li>
+									<label class="checkbox-name-label">
+										<input type="checkbox" name="news" checked>
+										<span class="checkbox-name">Новости</span>
+									</label>	
+								</li>
+								<li>
+									<label class="checkbox-name-label">
+										<input type="checkbox" name="gallery">
+										<span class="checkbox-name">Галерея</span>
+									</label>	
+								</li>
+								<li>
+									<label class="checkbox-name-label">
+										<input type="checkbox" name="cart">
+										<span class="checkbox-name">Корзина</span>
+									</label>	
+								</li>
 							</ul>
-						</div>
-						<a href="#" class="button">Показать</a> -->
-
-
-						
+						</fieldset>
+						<button type="submit">Показать</button>
 					</form>
 				</section>
 				<section class="templates-catalog">
