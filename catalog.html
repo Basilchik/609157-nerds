@@ -131,7 +131,7 @@
 						</li>
 					</ul>
 					<ul class="catalog-pagination">
-						<li><a href="#">1</a></li>
+						<li><a>1</a></li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
 						<li><a href="#">Следующая</a></li>
@@ -164,13 +164,19 @@
 		<section class="modal-form">
 				<div class="modal-form-wrapper">
 					<form class="feedback-form">
-						<label for="your-name">Ваше имя:</label>
-						<input type="text" name="name" id="your-name" placeholder="Имя Фамилия">
-						<label for="your-email">Ваш e-mail:</label>
-						<input type="email" name="email" id="your-email" placeholder="email@example.com">
-						<label for="your-text">Текст письма</label>
-						<textarea id="your-text" placeholder="В свободной форме"></textarea>
-						<input type="submit" value="Отправить">
+						<label class="your-name-label">
+							<span class="your-name">Ваше имя:</span>
+							<input type="text" name="name" placeholder="Имя Фамилия">
+						</label>
+						<label class="your-email-label">
+							<span class="your-email">Ваш e-mail:</span>
+							<input type="email" name="email" placeholder="email@example.com">
+						</label>
+						<label class="your-text-label">
+							<textarea placeholder="В свободной форме"></textarea>
+						</label>
+												
+						<button>Отправить</button>
 					</form>
 				</div>	
 		</section>
