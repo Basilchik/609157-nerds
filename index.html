@@ -25,9 +25,9 @@
 				<h2 class="visually-hidden">Наши преимущества</h2>
 				<ul class="advantages-list">
 					<li class="advantage-item">
-						<div class="wrapper">
-							<p><b>Долго, дорого, скрупулезно.</b></p>
-							<p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+						<div class="advantages-info">
+							<p class="advantages-title"><b>Долго, дорого, скрупулезно.</b></p>
+							<p class="advantages-description">Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
 							<a href="#" class="button">Узнать больше</a>
 						</div>
 						<figure class="advantage-item-picture">
@@ -35,9 +35,9 @@
 						</figure>
 					</li>
 					<li class="advantage-item">
-						<div class="wrapper">
-							<p><b>Любим математику как никто другой </b></p>
-							<p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+						<div class="advantages-info">
+							<p class="advantages-title"><b>Любим математику как никто другой </b></p>
+							<p class="advantages-description">Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
 							<a href="#" class="button">Узнать больше</a>
 						</div>
 						<figure class="advantage-item-picture">
@@ -45,9 +45,9 @@
 						</figure>
 					</li>
 					<li class="advantage-item">
-						<div class="wrapper">
-							<p><b>Только ночь, только хардкор</b></p>
-							<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+						<div class="advantages-info">
+							<p class="advantages-title"><b>Только ночь, только хардкор</b></p>
+							<p class="advantages-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
 							<a href="#" class="button">Узнать больше</a>
 						</div>	
 						<figure class="advantage-item-picture">
@@ -125,16 +125,16 @@
 					</div>	
 			</section>
 			<section class="our-clients">
-				<figure class="html-academy-logo">
+				<figure class="client-logo">
 					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-1.png" width="199" height="68" alt="html-academy-logo" ></a>
 				</figure>
 				<figure class="barbershop-borodinski-logo">
 					<a href="#"> <img src="img/logo-2.png" width="209" height="90" alt="barbershop-borodinski-logo"></a>
 				</figure>
-				<figure class="pink-app-logo">
+				<figure class="client-logo">
 					<a href="#"> <img src="img/Logo-3.png" width="185" height="52" alt="pink-app-logo"></a>
 				</figure>
-				<figure class="handmade-shop-mishka-logo">
+				<figure class="client-logo">
 					<a href="#"><img src="img/Logo-4.png" width="173" height="84" alt="handmade-shop-mishka-logo"></a>
 				</figure>
 			</section>
@@ -145,7 +145,7 @@
 				<address class="contacts-address">
 					191186, Санкт-Петербург,
 					ул. Б.Конюшенная, д. 19/8
-					тел. +7 (812) 275-75-75
+					<a href="+78122757575">тел. +7 (812) 275-75-75</a>
 				</address>
 				<a href="#" class="button">Напишите нам</a>
 			
@@ -166,19 +166,23 @@
 		<section class="modal-form">
 				<div class="modal-form-wrapper">
 					<form class="feedback-form">
-						<label class="your-name-label">
-							<span class="your-name">Ваше имя:</span>
-							<input type="text" name="name" placeholder="Имя Фамилия">
-						</label>
-						<label class="your-email-label">
-							<span class="your-email">Ваш e-mail:</span>
-							<input type="email" name="email" placeholder="email@example.com">
-						</label>
-						<label class="your-text-label">
-							<textarea placeholder="В свободной форме"></textarea>
-						</label>
-												
-						<button>Отправить</button>
+						<fieldset>
+							<legend>Напишите нам</legend>
+							<label class="your-name-label">
+								<span class="your-name">Ваше имя:</span>
+								<input type="text" name="name" placeholder="Имя Фамилия">
+							</label>
+							<label class="your-email-label">
+								<span class="your-email">Ваш e-mail:</span>
+								<input type="email" name="email" placeholder="email@example.com">
+							</label>
+							<label class="your-text-label">
+								<span class="your-text">Текст письма</span>
+								<textarea placeholder="В свободной форме"></textarea>
+							</label>
+						</fieldset>
+						<span class="modal-close">х</span>					
+						<button type="submit" class="button">Отправить</button>
 					</form>
 				</div>	
 		</section>

@@ -8,11 +8,13 @@
 	<div class="wrapper">
 		<header class="main-header">
 				<nav class="main-nav">
-					<a href="index.html" class="main-header-logo"><img src="img/nerds-logo.svg"  width="160" height="65" alt="Nerds logo"></a>
+					<a href="index.html" class="main-header-logo">
+						<img src="img/nerds-logo.svg"  width="160" height="65" alt="Nerds logo">
+					</a>
 					<ul class="site-navigation">
 						<li><a href="#">Студия</a></li>
 						<li><a href="#">Клиенты</a></li>
-						<li class="active"><a href="#">Магазин</a></li>
+						<li class="active"><a>Магазин</a></li>
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					<ul class="user-navigation">
@@ -21,17 +23,15 @@
 				</nav>
 			</header>
 		<main>
-			<h2 class="templates-shop-title">Магазин готовых шаблонов</h2>
+			<section class="templates-shop-title">
+				<h2 class="templates-shop-title-name">Магазин готовых шаблонов</h2>
+			</section>
 			<div class="main-content">
 				<section class="filters-block">
 					<form class="filter" method="get" action="https://echo.htmlacademy.ru">	
 						<fieldset>
 							<legend>Стоимость:</legend>
-							 <label class="price-value-label">Rangeslider:</label>
-        						<input type="range" name="range-1a" min="0" max="100" value="40" data-popup-enabled="true" data-show-value="true">        
-        					<label class="price-value-label">
-        						<input type="range" name="range-1b"  min="0" max="100" value="80" data-popup-enabled="true" data-show-value="true">
-        						Rangeslider:</label>
+							 
 						</fieldset>
 						<fieldset>
 							<legend>Сетка:</legend>
@@ -97,37 +97,101 @@
 				<section class="templates-catalog">
 					<h3 class="visually-hidden">Примеры наших работ</h3>
 					<div class="catalog-sort">
-						<p>Сортировать:</p>
-						<ul>
-							<li class="sort-by-price">По цене</li>
-							<li class="sort-by-type">По типу</li>
-							<li class="sort-by-name">По названию</li>
+						<p class="catalog-sort-name">Сортировать:</p>
+						<ul class="catalog-sort-type">
+							<li class="sort-by-price"><a href="#">По цене</a></li>
+							<li class="sort-by-type"><a href="#">По типу</a></li>
+							<li class="sort-by-name"><a href="#">По названию</a></li>
+						</ul>
+						<ul class="catalog-sort-direction">
+							<li><a href="#">Сортировка вниз</a></li>
+							<li><a href="#">Сортировка вверх</a></li>
 						</ul>
 					</div>
 					<ul class="templates-list">
 						<li>
-							<figure class="templates-item"><img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona image"></figure>
-							<a href="#" class="button">9 900 руб.</a>
+							<article class="templates-item">
+								<figure class="templates-img">
+									<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona image">
+								</figure>
+								<div class="templates-item-hover-status">
+									<h3 class="template-item-name">
+										<a href="">Sedona</a>
+									</h3>								
+									<p class="templates-item-description"></p>
+									<a href="#" class="button">9 900 руб.</a>
+								</div>
+							</article>	
 						</li>
 						<li>
-							<figure class="templates-item"><img src="img/img-pink.jpg" width="360" height="576" alt="Pink image"></figure>
-							<a href="#" class="button">9 900 руб.</a>
+							<article class="templates-item">
+								<figure class="templates-img">
+									<img src="img/img-pink.jpg" width="360" height="576" alt="Pink image">
+								</figure>
+								<div class="templates-item-hover-status">
+									<h3 class="template-item-name">
+										<a href="#">Pink app</a>
+									</h3>
+									<p class="templates-item-description"></p>
+									<a href="#" class="button">9 900 руб.</a>
+								</div>
+							</article>	
 						</li>
 						<li>
-							<figure class="templates-item"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop image"></figure>
-							<a href="#" class="button">9 900 руб.</a>
+							<article class="templates-item">
+								<figure class="templates-img">
+									<img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop image">
+								</figure>
+								<div class="templates-item-hover-status">
+									<h3 class="template-item-name">
+										<a href="#">Barbershop</a>
+									</h3>
+									<p class="templates-item-description"></p>
+									<a href="#" class="button">9 900 руб.</a>
+								</div>
+							</article>	
 						</li>
 						<li>
-							<figure class="templates-item"><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka image"></figure>
-							<a href="#" class="button">9 900 руб.</a>
+							<article class="templates-item">
+								<figure class="templates-img">
+									<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka image">
+								</figure>
+								<div class="templates-item-hover-status">
+									<h3 class="template-item-name">
+										<a href="#">Mishka</a>
+									</h3>
+									<p class="templates-item-description"></p>
+									<a href="#" class="button">9 900 руб.</a>
+								</div>
+							</article>	
 						</li>
 						<li>
-							<figure class="templates-item"><img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus image"></figure>
-							<a href="#" class="button">9 900 руб.</a>
+							<article class="templates-item">
+								<figure class="templates-img">
+									<img src="img/img-aplus.jpg" width="360" height="576" alt="Aplus image">
+								</figure>
+								<div class="templates-item-hover-status">
+									<h3 class="template-item-name">
+										<a href="#">Aplus</a>
+									</h3>
+									<p class="templates-item-description"></p>
+									<a href="#" class="button">9 900 руб.</a>
+								</div>
+							</article>	
 						</li>
 						<li>
-							<figure class="templates-item"><img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast image"></figure>
-							<a href="#" class="button">9 900 руб.</a>
+							<article class="templates-item">
+								<figure class="templates-img">
+									<img src="img/img-kvast.jpg" width="360" height="576" alt="Kvast image">
+								</figure>
+								<div class="templates-item-hover-status">
+									<h3 class="template-item-name">
+										<a href="#">Kvast</a>
+									</h3>
+									<p class="templates-item-description"></p>
+									<a href="#" class="button">9 900 руб.</a>
+								</div>
+							</article>	
 						</li>
 					</ul>
 					<ul class="catalog-pagination">
@@ -145,9 +209,10 @@
 				<address class="contacts-address">
 					191186, Санкт-Петербург,
 					ул. Б.Конюшенная, д. 19/8
-					тел. +7 (812) 275-75-75
+					<a href="+78122757575">тел. +7 (812) 275-75-75</a>
 				</address>
 				<a href="#" class="button">Напишите нам</a>
+			
 			</section>
 			<section class="social-links">
 				<ul class="social-links-list">
@@ -161,22 +226,27 @@
 				</div>
 			</section>
 		</footer>
+
 		<section class="modal-form">
 				<div class="modal-form-wrapper">
 					<form class="feedback-form">
-						<label class="your-name-label">
-							<span class="your-name">Ваше имя:</span>
-							<input type="text" name="name" placeholder="Имя Фамилия">
-						</label>
-						<label class="your-email-label">
-							<span class="your-email">Ваш e-mail:</span>
-							<input type="email" name="email" placeholder="email@example.com">
-						</label>
-						<label class="your-text-label">
-							<textarea placeholder="В свободной форме"></textarea>
-						</label>
-												
-						<button>Отправить</button>
+						<fieldset>
+							<legend>Напишите нам</legend>
+							<label class="your-name-label">
+								<span class="your-name">Ваше имя:</span>
+								<input type="text" name="name" placeholder="Имя Фамилия">
+							</label>
+							<label class="your-email-label">
+								<span class="your-email">Ваш e-mail:</span>
+								<input type="email" name="email" placeholder="email@example.com">
+							</label>
+							<label class="your-text-label">
+								<span class="your-text">Текст письма</span>
+								<textarea placeholder="В свободной форме"></textarea>
+							</label>
+						</fieldset>
+						<span class="modal-close">х</span>					
+						<button type="submit" class="button">Отправить</button>
 					</form>
 				</div>	
 		</section>
