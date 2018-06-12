@@ -1,12 +1,20 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
    
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  
 }
 
 a {
@@ -85,3 +93,131 @@ a {
 
 /*End of header & advantages
 slider*/ 
+
+.services-list {
+    list-style: none;
+}
+
+.services-list h3{
+    color: #000000;
+    font-family: "Roboto";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.service-description {
+    color: #283136;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.services-item .button {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.services-item:first-child .button {
+    background-color: #fb565a;
+
+}
+
+.services-item:nth-child(2) .button {
+    background-color: #00ca74;;
+}
+
+.services-item:last-child .button {
+    background-color: #efc84a;
+}
+
+
+/*end of services*/
+
+
+.about-us-lead-text {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.about-us-principles {
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.orders-we-do {
+    text-transform: uppercase;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.orders-we-do-list {
+    font-weight: 400;
+    list-style: none;
+}
+
+.orders-we-do-list li:before {
+    display: inline-block;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
+.side-block-statistics caption {
+    /* Style for "с 2004 год" */
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.side-block-statistics tr:first-child {
+    /* Style for "100%" */
+    color: #000000;
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.side-block-statistics tr:last-child {
+    /* Style for "Соблюдение" */
+
+    color: #283136;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.client-logo img {
+    opacity: 0.2;
+}
+
+.client-logo img:hover {
+    opacity: 1;
+}
+
+.client-logo img:active {
+    opacity: 0.1;
+}
+
+/* end of - our clients*/
+
+
+
+
+
+
