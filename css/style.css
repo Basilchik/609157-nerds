@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-header,
+.advantages-slider {
+    background-color: #eee;
+}
+
+.main-nav {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #000;
+    text-transform: uppercase;
+    
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+    color:#fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+    color: rgba(0,0,0,0.3);
+}
+
+.advantages-list {
+	list-style: none;
+}
+
+.advantages-title {
+	font-size: 55px;
+    font-weight: 500;
+    line-height: 66px;
+    color: #000;
+}
+
+.advantages-description {
+	font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #000;
+}
+
+.advantages-info .button {
+	text-decoration: none;
+	font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    background-color: #fb565a;
+    text-transform: uppercase;
+}
+
+.advantages-info .button:hover {
+	background-color: #e74246;
+}
+
+.advantages-info .button:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+
+}
+
+/*End of header & advantages
+slider*/ 
