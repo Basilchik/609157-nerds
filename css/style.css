@@ -1,11 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", Arial, sans-serif;
+
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-   
+    color: #283136;
 }
 
 .visually-hidden {
@@ -14,12 +15,52 @@ body {
     width: 1px;
     height: 1px;
     margin: -1px;
-  
 }
 
 a {
     text-decoration: none;
+}
 
+input {
+	border: 2px solid #d7dcde;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(68, 68, 68, 0,5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fb565a;
+}
+
+.button:hover {
+    background-color: #e74246;
+}
+
+.button:active {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0,3)
+}
+
+.advantages-info .button {
+    background-color: #fb565a;
+}
+
+.advantages-info .button:hover {
+    background-color: #e74246;
+}
+
+.advantages-info .button:active {
+    background-color: #d7373b;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .main-header,
@@ -38,64 +79,41 @@ a {
     list-style: none;
 }
 
-.site-navigation a,
+.site-navigation a, 
 .user-navigation a {
     color: #000;
     text-transform: uppercase;
-    
 }
 
 .site-navigation a:hover,
 .user-navigation a:hover {
-    color:#fb565a;
+    color: #fb565a;
 }
 
 .site-navigation a:active,
 .user-navigation a:active {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .advantages-list {
-	list-style: none;
+    list-style: none;
 }
 
 .advantages-title {
-	font-size: 55px;
+    font-size: 55px;
     font-weight: 500;
     line-height: 55px;
     color: #000;
 }
 
 .advantages-description {
-	font-size: 16px;
+    font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
     color: #000;
 }
 
-.button {
-	text-decoration: none;
-	font-size: 16px;
-    line-height: 18px;
-    color: #fff;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #fb565a;
-}
 
-.advantages-info .button {
-    background-color: #fb565a;
-}
-
-.advantages-info .button:hover {
-	background-color: #e74246;
-}
-
-.advantages-info .button:active {
-	background-color: #d7373b;
-	color: rgba(255, 255, 255, 0.3);
-
-}
 
 /*End of header & advantages
 slider*/ 
@@ -104,8 +122,8 @@ slider*/
     list-style: none;
 }
 
-.services-list h3{
-    color: #000000;
+.service-title {
+    color: #000;
     font-size: 24px;
     font-weight: 700;
     line-height: 30px;
@@ -113,31 +131,35 @@ slider*/
 }
 
 .service-description {
-    color: #283136;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.services-item .button {
-    text-transform: uppercase;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
+
+.button-green {
+    background-color: #00ca74;
 }
 
-.services-item:first-child .button {
-    background-color: #fb565a;
-
+.button-green:hover {
+    background-color: #00bc6c;
 }
 
-.services-item .button {
-    background-color: #00ca74;;
+.button-green:active {
+    background-color: #00aa62;
+    color: 
 }
 
-.services-item:last-child .button {
+.button-yellow {
     background-color: #efc84a;
+}
+
+.button-yellow:hover {
+
+}
+
+.button-yellow:active {
+
 }
 
 
@@ -151,7 +173,6 @@ slider*/
 }
 
 .about-us-principles {
-    color: #283136;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -159,7 +180,6 @@ slider*/
 
 .orders-we-do {
     text-transform: uppercase;
-    color: #283136;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -186,17 +206,13 @@ slider*/
 }
 
 .side-block-statistics tr:first-child {
-    color: #000000;
-    font-family: Roboto;
+    color: #000;
     font-size: 45px;
     font-weight: 700;
     line-height: 55px;
 }
 
 .side-block-statistics tr:last-child {
-
-    color: #283136;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -206,91 +222,82 @@ slider*/
     vertical-align: super;
     font-size: 25px;
     margin-left: -12px;
-
 }
 
 
-.client-logo img {
+.client-logo a {
     opacity: 0.2;
 }
 
-.client-logo img:hover {
+.client-logo a:hover {
     opacity: 1;
 }
 
-.client-logo img:active {
+.client-logo a:active {
     opacity: 0.1;
 }
 
 /* end of - our clients*/
 .main-footer {
-	background-image: url("../img/map with marker.png");
-	background-position: top center;
-  	background-repeat: no-repeat;
+    background-image: url("../img/map-with-marker.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
 }
 
 .contacts-name {
-	font-size: 18px;
-	line-height: 30px;
-	font-weight: 700;
-	text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .contacts-address {
-	color: #666666;
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 400;
-	font-style: normal;
+    color: #666;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
 .contacts-address a {
-	color: #666666;
+    color: #666;
 }
 
 .contacts .button {
-	background-color: #fb565a;
+    background-color: #fb565a;
 }
 
 .social-links-info .lead-text {
-	/* Style for "Давайте др" */
-	color: #000000;
-	font-size: 36px;
-	font-weight: 700;
-	line-height: 36px;
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
 }
 
 .lead-text-description {
-	/* Style for "Скидка 10%" */
-	height: 16px;
-	color: #444444;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 22px;
+    color: #444;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
 }
   
 .social-button {
-	background-color: #e1e1e1;
-
+    background-color: #e1e1e1;
 }
 
-::-webkit-input-placeholder {
-	/* Style for "Имя Фамили" */
-
-	opacity: 0.5;
-	color: #444444;
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 18px;
+.feedback-form-title {
+    font-size: 45px;
+    line-height: 45px;
 }
 
-input {
-	border: 2px solid #d7dcde;
+.modal-form .your-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
 }
-
 
 /*Catalog extra styling*/
 
@@ -299,7 +306,6 @@ input {
 }
 
 .templates-shop-title-name {
-	/* Style for "Магазин го" */
 	color: #000;
 	font-size: 55px;
 	font-weight: 500;
@@ -308,12 +314,11 @@ input {
 
 .filters-block .button {
 	background-color: #eee;
-	color:#000;
+	color: #000;
 }
 
 .filters-block h2 {
-    color: #000000;
-    font-family: Roboto;
+    color: #000;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
@@ -323,27 +328,20 @@ input {
 
 .layout-name,
 .checkbox-name {
-
-    color: #283136;
-    font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
 }
 
 .catalog-sort-name {
-    /* Style for "СОРТИРОВАТ" */
-    color: #000000;
-    font-family: Roboto;
+    color: #000;
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
 }
 
 .catalog-sort-type li {
-    opacity: 0.3;
-    color: #000000;
-    font-family: Roboto;
+    color: rgba(0, 0, 0, 0,3);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -353,10 +351,7 @@ input {
 
 
 .catalog-sort-type li:hover {
-    /* Style for "По цене" */
-    opacity: 0.6;
-    color: #000000;
-    font-family: Roboto;
+    color: rgba(0, 0, 0, 0,6);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -364,9 +359,7 @@ input {
 }
 
 .catalog-sort-type li:active {
-    /* Style for "По цене" */
-    color: #000000;
-    font-family: Roboto;
+    color: #000;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -374,22 +367,16 @@ input {
 }
 
 .template-item-name a {
-    /* Style for "Sedona" */
-
-color: #000000;
-font-family: Roboto;
-font-size: 18px;
-font-weight: 700;
-line-height: 30px;
-text-transform: uppercase;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
 }
 
 .templates-item-description {
-    /* Style for "Информацио" */
-
-color: #666666;
-font-family: Roboto;
-font-size: 16px;
-font-weight: 400;
-line-height: 18px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
 }
