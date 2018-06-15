@@ -26,7 +26,7 @@ input {
 }
 
 input::-webkit-input-placeholder {
-    color: rgba(68, 68, 68, 0,5);
+    color: rgba(68, 68, 68, 0.5);
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -47,20 +47,8 @@ input::-webkit-input-placeholder {
 
 .button:active {
     background-color: #d7373b;
-    color: rgba(255, 255, 255, 0,3)
-}
-
-.advantages-info .button {
-    background-color: #fb565a;
-}
-
-.advantages-info .button:hover {
-    background-color: #e74246;
-}
-
-.advantages-info .button:active {
-    background-color: #d7373b;
     color: rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .main-header,
@@ -147,7 +135,7 @@ slider*/
 
 .button-green:active {
     background-color: #00aa62;
-    color: 
+    color: rgba(255, 255, 2555, 0.3);
 }
 
 .button-yellow {
@@ -155,11 +143,13 @@ slider*/
 }
 
 .button-yellow:hover {
-
+    background-color: #eab534;
+    color: #ffffff;
 }
 
 .button-yellow:active {
-
+    background-color: #e5a722;
+    color: rgba(255, 255, 2555, 0.3);
 }
 
 
@@ -239,9 +229,9 @@ slider*/
 
 /* end of - our clients*/
 .main-footer {
-    background-image: url("../img/map-with-marker.png");
+
+    background: #e9e5db url("../img/map-with-marker.png") no-repeat;
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: 100%;
 
 }
@@ -341,7 +331,7 @@ slider*/
 }
 
 .catalog-sort-type li {
-    color: rgba(0, 0, 0, 0,3);
+    color: rgba(0, 0, 0, 0.3);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -351,7 +341,7 @@ slider*/
 
 
 .catalog-sort-type li:hover {
-    color: rgba(0, 0, 0, 0,6);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
