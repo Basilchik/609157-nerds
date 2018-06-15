@@ -51,9 +51,23 @@ input::-webkit-input-placeholder {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
+.main-nav {
+    margin-top: 49px;
+    margin-right: 140px;
+    margin-left: 139px; 
+}
+
 .main-header,
 .advantages-slider {
     background-color: #eee;
+}
+
+.main-header-logo:hover {
+    opacity: 0.8;
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
 }
 
 .main-nav {
@@ -136,6 +150,7 @@ slider*/
 .button-green:active {
     background-color: #00aa62;
     color: rgba(255, 255, 2555, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-yellow {
@@ -150,6 +165,7 @@ slider*/
 .button-yellow:active {
     background-color: #e5a722;
     color: rgba(255, 255, 2555, 0.3);
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 
@@ -232,7 +248,7 @@ slider*/
 
     background: #e9e5db url("../img/map-with-marker.png") no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
 
 }
 
@@ -250,10 +266,6 @@ slider*/
     line-height: 18px;
     font-weight: 400;
     font-style: normal;
-}
-
-.contacts .button {
-    background-color: #fb565a;
 }
 
 .social-links-info .lead-text {
@@ -301,6 +313,15 @@ slider*/
 .filters-block .button {
 	background-color: #eee;
 	color: #000;
+}
+
+.filters-block .button:hover {
+    background-color: #dfdfdf;
+}
+
+.filters-block .button:hover {
+    background-color: #d5d5d5;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .filters-block h2 {
