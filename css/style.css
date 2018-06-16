@@ -52,9 +52,10 @@ input::-webkit-input-placeholder {
 }
 
 .main-nav {
-    margin-top: 49px;
-    margin-right: 140px;
-    margin-left: 139px; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-header,
@@ -99,6 +100,8 @@ input::-webkit-input-placeholder {
 
 .advantages-list {
     list-style: none;
+    margin-top: 0;
+
 }
 
 .advantages-title {
@@ -106,6 +109,7 @@ input::-webkit-input-placeholder {
     font-weight: 500;
     line-height: 55px;
     color: #000;
+    margin-top: 0;
 }
 
 .advantages-description {
