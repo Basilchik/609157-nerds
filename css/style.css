@@ -51,11 +51,13 @@ input::-webkit-input-placeholder {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
+
+
 .main-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  padding: 49px 140px;
 }
 
 .main-header,
@@ -71,7 +73,27 @@ input::-webkit-input-placeholder {
     opacity: 0.3;
 }
 
-.main-nav {
+.main-header-logo {
+    margin-right: 200px;
+}
+
+.site-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 440px;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-right: 200px;
+}
+
+.user-navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 160px;
+    padding-left: 0;
+}
+
+.site-navigation li {
     font-size: 16px;
     line-height: 30px;
     color: #000;
