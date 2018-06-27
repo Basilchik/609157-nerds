@@ -51,13 +51,22 @@ input::-webkit-input-placeholder {
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
 
+}
+.main-header {
+    padding: 49px 140px;
+    width: 1160px;
+}
 
 .main-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 49px 140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .main-header,
@@ -74,29 +83,47 @@ input::-webkit-input-placeholder {
 }
 
 .main-header-logo {
-    margin-right: 200px;
+    margin-right: 202px;
 }
 
 .site-navigation {
     display: flex;
     flex-direction: row;
-    flex-basis: 440px;
-    justify-content: space-between;
-    padding-left: 0;
-    margin-right: 200px;
-}
+    width: 440px;
+    justify-content: flex-start;
+    padding: 0;
+    margin-right: 245px;
 
-.user-navigation {
-    display: flex;
-    justify-content: flex-end;
-    width: 160px;
-    padding-left: 0;
 }
 
 .site-navigation li {
     font-size: 16px;
     line-height: 30px;
     color: #000;
+    margin-top: 6px;
+}
+
+.site-navigation li:nth-child(1) {
+    margin-right: 45px;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: 47px;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-right: 45px;
+}
+
+.user-navigation {
+    display: flex;
+    justify-content: flex-end;
+    width: 160px;
+    padding: 0;
+}
+
+.user-navigation li {
+    margin-top: 6px;
 }
 
 .site-navigation,
@@ -120,10 +147,23 @@ input::-webkit-input-placeholder {
     color: rgba(0, 0, 0, 0.3);
 }
 
+/*end of header*/
+
+.advantages-slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
 .advantages-list {
     list-style: none;
-    margin-top: 0;
-
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .advantages-title {
@@ -131,7 +171,8 @@ input::-webkit-input-placeholder {
     font-weight: 500;
     line-height: 55px;
     color: #000;
-    margin-top: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .advantages-description {
@@ -139,15 +180,62 @@ input::-webkit-input-placeholder {
     line-height: 24px;
     font-weight: 400;
     color: #000;
+    width: 360px;
+    padding: 0;
+    margin: 0;
+}
+
+.advantage-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.advantage-item-picture {
+    padding: 0;
+    margin: 0;
+}
+
+.advantage-item-picture img {
+    position: relative;
+    right: 59px;
+    bottom: 41px;
+}
+
+
+.advantages-info {
+    width: 560px;
+    min-height: 275px;
+    margin-left: 20px;
+}
+
+.slider-paginator {
+    
 }
 
 
 
-/*End of header & advantages
+/*End of advantages
 slider*/ 
+
+.services {
+    margin: 0 120px;
+    padding: 0 20px;
+}
 
 .services-list {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
 }
 
 .service-title {
@@ -162,8 +250,21 @@ slider*/
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    width: 260px;
 }
 
+.service-img {
+    padding: 0;
+    margin: 0;
+    order: -1;
+}
+
+.buy {
+    padding-top: 19px;
+    padding-bottom: 18px;
+    padding-left: 39px;
+    padding-right: 39px; 
+}
 
 .button-green {
     background-color: #00ca74;
@@ -196,7 +297,17 @@ slider*/
 
 
 /*end of services*/
+.about-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 120px;
+    padding: 0 20px;
+}
 
+.about-us-description {
+    width: 660px;
+}
 
 .about-us-lead-text {
     font-size: 45px;
@@ -230,6 +341,28 @@ slider*/
     background-color: #fb565a;
 }
 
+.about-us-side-block {
+    width: 360px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+}
+
+.nerds-colorful-logo {
+    margin: 0;
+}
+
+.side-block-statistics {
+    margin: 0 auto;
+}
+
 .side-block-statistics caption {
     font-size: 16px;
     font-weight: 700;
@@ -256,6 +389,11 @@ slider*/
     margin-left: -12px;
 }
 
+.our-clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .client-logo a {
     opacity: 0.2;
@@ -271,11 +409,27 @@ slider*/
 
 /* end of - our clients*/
 .main-footer {
+    display: flex;
+    flex-direction: column;
 
     background: #e9e5db url("../img/map-with-marker.png") no-repeat;
     background-position: center center;
     background-size: cover;
+}
 
+.contacts {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 240px;
+
+    background-color: #fff;
+    padding-top: 54px;
+    padding-right: 40px;
+    padding-bottom: 47px;
+    padding-left: 40px;
 }
 
 .contacts-name {
@@ -283,15 +437,32 @@ slider*/
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    width: 182px;
 }
 
 .contacts-address,
 .contacts-address a {
+    padding: 0;
+    margin: 0;
     color: #666;
     font-size: 16px;
     line-height: 18px;
     font-weight: 400;
     font-style: normal;
+}
+
+.contacts-address {
+    width: 200px;
+    margin-bottom: 37px;
+}
+
+.write-us {
+    width: 120px;
+    padding-top: 16px;
+    padding-right: 46px;
+    padding-bottom: 16px;
+    padding-left: 45px;
+    border-radius: 3px;
 }
 
 .social-links-info .lead-text {
